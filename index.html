@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES Kabirizi - science and conscience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-gray-800">🏫 Es kabirizi Academy</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#academics" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Academics</a>
+                        <a href="#admissions" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Admissions</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+       
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="#academics" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Academics</a>
+                <a href="#admissions" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Admissions</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-gradient text-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to es kabirirzi</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Nurturing minds, building futures, and inspiring excellence in every student since 1985</p>
+                <div class="space-x-4">
+                    <button onclick="scrollToSection('admissions')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Apply Now</button>
+                    <button onclick="scrollToSection('about')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Our School</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dedicated to providing exceptional education and fostering personal growth in a supportive environment</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Academic Excellence</h3>
+                    <p class="text-gray-600">At ES Kabirizi, academic excellence is at the heart of our mission. We are committed to providing high-quality education that empowers students to reach their full potential. Through dedicated teaching, continuous assessment, and a culture of discipline and hard work, our learners consistently achieve outstanding results. We believe in nurturing both knowledge and character, ensuring that every student becomes a responsible and successful member of society</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Character Development</h3>
+                    <p class="text-gray-600">At ES Kabirizi, we believe that true education goes beyond academics. We are deeply committed to shaping students into respectful, responsible, and confident individuals. Through mentorship, discipline, leadership training, and moral education, we help our learners grow in integrity, resilience, and empathy. Our goal is to produce not only excellent students, but also good citizens who will positively impact their communities and the world.</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Community Focus</h3>
+                    <p class="text-gray-600">
+ES Kabirizi is a school rooted in community values. We actively engage with parents, local leaders, and stakeholders to create a supportive environment for our students. By encouraging service, teamwork, and social responsibility, we teach our learners the importance of giving back and working together. Our school is not just a place of learning—it is a hub of positive change and unity in the community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="academics" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Academic Programs</h2>
+                <p class="text-xl text-gray-600">Comprehensive education from elementary through high school</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="text-3xl mb-4">📚</div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Elementary</h3>
+                    <p class="text-gray-600 text-sm">Grades K-5: Building strong foundations in core subjects</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="text-3xl mb-4">🔬</div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Middle School</h3>
+                    <p class="text-gray-600 text-sm">Grades 6-8: Exploring interests and developing critical thinking</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="text-3xl mb-4">🎨</div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">High School</h3>
+                    <p class="text-gray-600 text-sm">Grades 9-12: College prep with AP courses and electives</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                    <div class="text-3xl mb-4">⚽</div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Extracurricular</h3>
+                    <p class="text-gray-600 text-sm">Sports, clubs, and activities for well-rounded development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">850+</div>
+                    <div class="text-blue-200">Students Enrolled</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">95%</div>
+                    <div class="text-blue-200">College Acceptance</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">12:1</div>
+                    <div class="text-blue-200">Student-Teacher Ratio</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">38</div>
+                    <div class="text-blue-200">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Admissions</h2>
+                <p class="text-xl text-gray-600">Join our community of learners and achievers</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Application Process</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">1</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Submit Application</h4>
+                                <p class="text-gray-600">Complete our online application form</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">2</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">School Visit</h4>
+                                <p class="text-gray-600">Tour our campus and meet our faculty</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">3</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Assessment</h4>
+                                <p class="text-gray-600">Academic evaluation and interview</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">4</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Enrollment</h4>
+                                <p class="text-gray-600">Welcome to Es kabirizi Academy!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Important Dates</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="font-semibold text-gray-800">Application Deadline</div>
+                            <div class="text-gray-600">August 15, 2025</div>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="font-semibold text-gray-800">Assessment Period</div>
+                            <div class="text-gray-600">August 1-30, 2025</div>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="font-semibold text-gray-800">Enrollment Confirmation</div>
+                            <div class="text-gray-600">May 15, 2024</div>
+                        </div>
+                    </div>
+                    <button onclick="showApplicationForm()" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mt-6">Start Application</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600">Get in touch with our admissions team</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">📍</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Address</h4>
+                                <p class="text-gray-600">123 NGOMA district<br>KAREMBO, ST 12345</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">📞</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">(250)790371598</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">✉️</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">info@eskabirizi.edu</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">🕒</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Office Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 8:30 AM - 4:45 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Send us a Message</h3>
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                        <p class="text-yellow-800 text-sm">📧 <strong>Demo Contact Form</strong> - This is a sample form for demonstration purposes</p>
+                    </div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                                <option>General Inquiry</option>
+                                <option>Admissions</option>
+                                <option>Academic Programs</option>
+                                <option>Campus Visit</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="button" onclick="showDemoMessage()" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🏫 Es kabirizi Academy</h3>
+                    <p class="text-gray-300">Excellence in education since 1985</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#home" class="hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#academics" class="hover:text-white transition duration-300">Academics</a></li>
+                        <li><a href="#admissions" class="hover:text-white transition duration-300">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Programs</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Elementary School</li>
+                        <li>Middle School</li>
+                        <li>High School</li>
+                        <li>Extracurricular Activities</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <button class="text-gray-300 hover:text-white transition duration-300">📘</button>
+                        <button class="text-gray-300 hover:text-white transition duration-300">🐦</button>
+                        <button class="text-gray-300 hover:text-white transition duration-300">📷</button>
+                        <button class="text-gray-300 hover:text-white transition duration-300">💼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Es kabirizi . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <div id="applicationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Application Form</h3>
+                <button onclick="closeApplicationForm()" class="text-gray-500 hover:text-gray-700">✕</button>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                <p class="text-blue-800 text-sm">📝 <strong>Demo Application</strong> - This is a sample application form</p>
+            </div>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Student Name</label>
+                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Grade Level</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        <option>Kindergarten</option>
+                        <option>Grade 1-5</option>
+                        <option>Grade 6-8</option>
+                        <option>Grade 9-12</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Parent/Guardian Email</label>
+                    <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                </div>
+                <button type="button" onclick="showApplicationSuccess()" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+  
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+       
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+               
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+       
+        function showApplicationForm() {
+            document.getElementById('applicationModal').classList.remove('hidden');
+        }
+
+        function closeApplicationForm() {
+            document.getElementById('applicationModal').classList.add('hidden');
+        }
+
+        function showApplicationSuccess() {
+            alert('Thank you for your application! We will contact you within 2-3 business days to schedule your campus visit.');
+            closeApplicationForm();
+        }
+
+        function showDemoMessage() {
+            alert('Thank you for your message! This is a demo form. In a real website, your message would be sent to our admissions team.');
+        }
+
+       
+        document.getElementById('applicationModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeApplicationForm();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96a87c78a07473a2',t:'MTc1NDQxOTg5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
